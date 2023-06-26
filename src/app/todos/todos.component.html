@@ -1,0 +1,32 @@
+<div class="container">
+  <mat-card class="main-card">
+    <mat-card-header class="card-header">
+      <mat-card-title>
+        <h1 class="card-title"><b>TO DO LIST</b></h1>
+      </mat-card-title>
+    </mat-card-header>
+    <mat-card-content class="card-body">
+
+      <form #frm='ngForm' (ngSubmit)="takeValueFromInput(frm.value)" class="card-form-send">
+        <mat-form-field>
+          <input matInput required name="name" ngModel>
+        </mat-form-field>
+        <button mat-button color="primary">Send</button>
+      </form>
+      <ul style="padding: 0" class="list-group">
+        <mat-selection-list>
+          <div class="list-group-item" *ngFor="let event of events">
+            <button (click)="deleteItemFromList($event)" class="item-remove-button" mat-mini-fab color="primary"><mat-icon class="delete-icon">delete</mat-icon></button>
+            <mat-list-option>{{event}}</mat-list-option>
+          </div>
+        </mat-selection-list>
+      </ul>
+
+    </mat-card-content>
+    <mat-card-footer>
+      <mat-card-actions>
+        <button (click)="deleteAllItem()" mat-button color="primary">Delete All</button>
+      </mat-card-actions>
+    </mat-card-footer>
+  </mat-card>
+</div>

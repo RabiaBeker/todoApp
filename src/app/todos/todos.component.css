@@ -1,0 +1,43 @@
+.container{
+  display: flex;
+  justify-content: center;
+  margin: 5rem;
+}
+.main-card{
+  width: 45%;
+  border-style: double;
+  border-color: pink;
+  border-width: 5px;
+  padding: 1rem 1rem 1rem 1rem;
+}
+.card-header{
+  color: pink;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+.card-body{
+  width: 100%;
+  padding: 0;
+}
+.card-form-send{
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0;
+}
+.list-group-item{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+.item-remove-button{
+  width: 30px;
+  height: 30px;
+}
+.delete-icon{
+  font-size: 18px;
+  margin-top: 4px;
+}
