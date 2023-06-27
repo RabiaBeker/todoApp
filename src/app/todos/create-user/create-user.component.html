@@ -1,0 +1,29 @@
+<img src="../assets/images/galaksi.jpg">
+<div class="container">
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title><b class="title-text">Create New Account</b></mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <form #form="ngForm" (ngSubmit)="takenUserInformation(form.value)">
+        <mat-form-field>
+          <div class="email-input">
+            <mat-icon>people</mat-icon>
+            <input matInput ngModel name="email" placeholder="Ex. pat@example.com">
+          </div>
+          <div class="password-input">
+            <mat-icon>lock</mat-icon>
+            <input matInput ngModel name="password" placeholder="******">
+          </div>
+        </mat-form-field>
+          <button style="background-color: pink" class="signInButton" mat-button><b style="color: white">Sign Up</b></button>
+      </form>
+    </mat-card-content>
+    <mat-card-footer>
+      <div class="footer-section">
+        <p>Do you have a account?</p>
+        <button style="background-color: #f9f9f9" mat-button><p style="color: pink">Log In</p></button>
+      </div>
+    </mat-card-footer>
+  </mat-card>
+</div>
