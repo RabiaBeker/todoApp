@@ -5,10 +5,9 @@
         <h1 class="card-title"><b>TO DO LIST</b></h1>
       </mat-card-title>
     </mat-card-header>
-    <mat-card-content class="card-body">
-
+    <mat-card-content>
       <form #frm='ngForm' (ngSubmit)="takeValueFromInput(frm.value)" class="card-form-send">
-        <mat-form-field>
+        <mat-form-field style="width: 100%;">
           <input matInput required name="name" ngModel>
         </mat-form-field>
         <button mat-button color="primary">Send</button>
