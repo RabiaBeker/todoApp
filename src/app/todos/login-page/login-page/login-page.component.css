@@ -1,0 +1,30 @@
+.container{
+  width: 25%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+mat-card{
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(207,166,58,0.79);
+  width: 100%;
+  padding: 1rem;
+}
+.title-text{
+  color: white;
+  font-size: 30px;
+}
+mat-card-content{
+  margin-top: 1rem;
+  display: block;
+}
+mat-icon{
+  color: rgba(207,166,58,0.79);
+}
+.signInButton{
+  background-color: white;
+  width: 100%;
+}
+
